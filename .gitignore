@@ -1,32 +1,38 @@
-# Prerequisites
-*.d
+# This file is used for Git repositories to specify intentionally untracked files that Git should ignore. 
+# If you are not using git, you can delete this file. For more information see: https://git-scm.com/docs/gitignore
+# For useful gitignore templates see: https://github.com/github/gitignore
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Salesforce cache
+.sfdx/
+.localdevserver/
 
-# Precompiled Headers
-*.gch
-*.pch
+# LWC VSCode autocomplete
+**/lwc/jsconfig.json
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# LWC Jest coverage reports
+coverage/
 
-# Fortran module files
-*.mod
-*.smod
+# SOQL Query Results
+**/scripts/soql/query-results
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Executables
-*.exe
-*.out
-*.app
+# Dependency directories
+node_modules/
+
+# Eslint cache
+.eslintcache
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
